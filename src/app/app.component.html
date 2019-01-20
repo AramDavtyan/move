@@ -1,0 +1,8 @@
+<section (mousemove)="handleMouseMove($event)">
+  <div
+  (mousedown)="handleMouseDown($event, i)"
+  [ngStyle]="{left: item.left + 'px', top: item.top + 'px'}"
+  *ngFor="let item of items; let i = index">
+    {{item.number}}
+  </div>
+</section>
